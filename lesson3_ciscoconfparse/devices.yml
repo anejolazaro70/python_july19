@@ -1,0 +1,16 @@
+- hostname: cisco3.lasthop.io
+  name: cisco3
+  password: 88newclass
+  username: pyclass
+- hostname: cisco4.lasthop.io
+  name: cisco4
+  password: 88newclass
+  username: pyclass
+- hostname: arista1.lasthop.io
+  name: arista1
+  password: 88newclass
+  username: pyclass
+- hostname: arista2.lasthop.io
+  name: arista2
+  password: 88newclass
+  username: pyclass
