@@ -6,8 +6,8 @@ from getpass import getpass
 
 password=getpass()
 
-device={"host": "cisco4.lasthop.io",
-       "username": "pyclass",
+device={"host": "cisco4",
+       "username": "user",
        "password": password,
        'secret': password,
        "device_type": "cisco_ios",

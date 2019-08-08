@@ -1,10 +1,11 @@
 #!/usr/bin/python
 import time
 from netmiko import ConnectHandler
+from getpass import getpass
 
-cisco4={"host": "cisco4.lasthop.io",
-       "username": "pyclass",
-       "password": "88newclass",
+cisco4={"host": "cisco4",
+       "username": "user",
+       "password": getpass(),
        "device_type": "cisco_ios",
        "session_log": "cisco4_1b_ping.txt"}
 

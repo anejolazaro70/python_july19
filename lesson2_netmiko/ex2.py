@@ -1,10 +1,11 @@
 #!/usr/bin/python
 from datetime import datetime, timedelta
 from netmiko import ConnectHandler
+from getpass import getpass
 
-device={"host": "nxos2.lasthop.io",
-       "username": "pyclass",
-       "password": "88newclass",
+device={"host": "nxos2",
+       "username": "user",
+       "password": getpass(),
        "device_type": "cisco_ios",
        "session_log": "nxos2_2.txt",
        "global_delay_factor": 2}
