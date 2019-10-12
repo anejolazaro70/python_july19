@@ -1,0 +1,13 @@
+---
+-   host: arista4.lasthop.io
+    port: 443
+    username: pyclass
+    transport: https
+-   host: arista2.lasthop.io
+    port: 443
+    username: pyclass
+    transport: https
+-   host: arista3.lasthop.io
+    port: 443
+    username: pyclass
+    transport: https
