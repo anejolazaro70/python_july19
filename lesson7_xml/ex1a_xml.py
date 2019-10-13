@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+import xml.etree.ElementTree as etree
+
+my_xml = etree.parse('show_security_zones.xml')
+print(my_xml)
+
+with open('show_security_zones.xml') as file:
+    my_xml = file.read()
+    print(my_xml)
+
+my_xml = etree.fromstring(my_xml)
+print(my_xml)
+print(type(my_xml))
