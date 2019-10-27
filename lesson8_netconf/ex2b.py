@@ -14,7 +14,8 @@ if check_connected:
     print('NETCONF connection opened for: {}'.format(srx2.get('host')))
     arp_t = gather_arp_table(device)
     route_t = gather_routes(device)
-    print_output(device, arp_t, route_t)
+    print_output(device, arp_t, 'ARP_TABLE')
+    print_output(device, route_t, 'ROUTE_TABLE')
 else:
     pprint('**** WARNING!!! CONNECTION NOT OPENED!!! ****')
 
