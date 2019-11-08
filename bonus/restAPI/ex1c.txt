@@ -1,0 +1,78 @@
+{
+  "id": 2,
+  "name": "cisco2",
+  "display_name": "cisco2",
+  "device_type": {
+    "id": 1,
+    "url": "http://netbox.lasthop.io/api/dcim/device-types/1/",
+    "manufacturer": {
+      "id": 2,
+      "url": "http://netbox.lasthop.io/api/dcim/manufacturers/2/",
+      "name": "Cisco",
+      "slug": "cisco"
+    },
+    "model": "881",
+    "slug": "cisco881"
+  },
+  "device_role": {
+    "id": 7,
+    "url": "http://netbox.lasthop.io/api/dcim/device-roles/7/",
+    "name": "Router",
+    "slug": "router"
+  },
+  "tenant": null,
+  "platform": {
+    "id": 1,
+    "url": "http://netbox.lasthop.io/api/dcim/platforms/1/",
+    "name": "Cisco IOS",
+    "slug": "cisco-ios"
+  },
+  "serial": "FTX18298312",
+  "asset_tag": null,
+  "site": {
+    "id": 1,
+    "url": "http://netbox.lasthop.io/api/dcim/sites/1/",
+    "name": "Fremont Data Center",
+    "slug": "fremont-dc"
+  },
+  "rack": {
+    "id": 1,
+    "url": "http://netbox.lasthop.io/api/dcim/racks/1/",
+    "name": "RK1",
+    "display_name": "RK1"
+  },
+  "position": null,
+  "face": {
+    "value": 0,
+    "label": "Front"
+  },
+  "parent_device": null,
+  "status": {
+    "value": 1,
+    "label": "Active"
+  },
+  "primary_ip": {
+    "id": 4,
+    "url": "http://netbox.lasthop.io/api/ipam/ip-addresses/4/",
+    "family": 4,
+    "address": "184.105.247.71/26"
+  },
+  "primary_ip4": {
+    "id": 4,
+    "url": "http://netbox.lasthop.io/api/ipam/ip-addresses/4/",
+    "family": 4,
+    "address": "184.105.247.71/26"
+  },
+  "primary_ip6": null,
+  "cluster": null,
+  "virtual_chassis": null,
+  "vc_position": null,
+  "vc_priority": null,
+  "comments": "",
+  "tags": [],
+  "custom_fields": {},
+  "config_context": {},
+  "created": "2018-10-26",
+  "last_updated": "2018-10-26T15:25:01.152779-07:00",
+  "local_context_data": null
+}
