@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import requests
+import os
+from urllib3.exceptions import InsecureRequestWarning
+from pprint import pprint
+import json
+
+def restAPI_get(url, http_headers):
+    response = requests.get(url, headers=http_headers, verify=False)
+    return response
+
+def restAPI_post(url, http_headers, datos):
+    response = requests.post(url, headers=http_headers, data=json.dumps(datos), verify=False)
+    return response
+
+def main():
+    url = "http://netbox.lasthop.io/api/ipam/ip-addresses/"
+    token = os.environ["NETBOX_TOKEN"]
+    headers = {}
+    headers["Content-Type"] = "application/json; version=2.4;"
+    headers["accept"] = "application/json; version=2.4;"
+    headers["Authorization"] = f"Token {token}"
+    requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+    data = {"address": "192.0.2.133/32"}
+    response = restAPI_post(url, headers, data)
+    pprint('Status code: {}'.format(response.status_code))
+    pprint(response.json())
+
+if __name__ == '__main__':
+    main()
