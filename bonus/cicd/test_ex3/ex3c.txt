@@ -1,0 +1,44 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.8, pytest-5.0.1, py-1.8.0, pluggy-0.12.0 -- /home/jlazaro/VENV/py3_venv/bin/python36
+cachedir: .pytest_cache
+rootdir: /home/jlazaro/python_july19/bonus/cicd/test_ex3
+plugins: pylama-7.7.1, f5-sdk-3.0.21
+collecting ... collected 2 items
+
+test_simple.py::test_my_add PASSED
+test_simple.py::test_my_mul FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_my_mul __________________________________
+
+    def test_my_mul():
+        c = my_mul(2, 3)
+>       assert c == 7
+E       assert 6 == 7
+E         -6
+E         +7
+
+test_simple.py:21: AssertionError
+====================== 1 failed, 1 passed in 0.09 seconds ======================
+============================= test session starts ==============================
+platform linux -- Python 3.6.8, pytest-5.0.1, py-1.8.0, pluggy-0.12.0 -- /home/jlazaro/VENV/py3_venv/bin/python36
+cachedir: .pytest_cache
+rootdir: /home/jlazaro/python_july19/bonus/cicd/test_ex3
+plugins: pylama-7.7.1, f5-sdk-3.0.21
+collecting ... collected 2 items
+
+test_simple_ex3c.py::test_my_add PASSED
+test_simple_ex3c.py::test_my_mul FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_my_mul __________________________________
+
+    def test_my_mul():
+        c = my_mul(2, 3)
+>       assert c == 7
+E       assert 6 == 7
+E         -6
+E         +7
+
+test_simple_ex3c.py:21: AssertionError
+====================== 1 failed, 1 passed in 0.09 seconds ======================

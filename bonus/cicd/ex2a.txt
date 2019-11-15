@@ -1,0 +1,33 @@
+--- fixme_black.py	2019-11-15 18:12:04.943588 +0000
++++ fixme_black.py	2019-11-15 18:12:08.599577 +0000
+@@ -4,26 +4,26 @@
+ 
+ 
+ def open_napalm_connection(device):
+     """Funtion to open napalm connection and return connection object"""
+     # Copy dictionary to ensure original object is not modified
+-    device=device.copy()
++    device = device.copy()
+     # Pop "platform" as this is an invalid kwarg to napalm
+-    platform = device.pop('platform')
++    platform = device.pop("platform")
+     driver = get_network_driver(platform)
+     conn = driver(**device)
+     conn.open()
+-    return(conn)
++    return conn
+ 
+ 
+ def main():
+     connections = []
+     for device in network_devices:
+         conn = open_napalm_connection(device)
+         connections.append(conn)
+ 
+-    print ("\n\n")
++    print("\n\n")
+     print("Print facts for all devices in connections list")
+     print("-" * 20)
+     for conn in connections:
+         print()
+         print("-" * 6)
