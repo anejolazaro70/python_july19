@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.8, pytest-5.0.1, py-1.8.0, pluggy-0.12.0 -- /home/jlazaro/VENV/py3_venv/bin/python36
+cachedir: .pytest_cache
+rootdir: /home/jlazaro/python_july19/bonus/cicd/test_ex5
+plugins: pylama-7.7.1, f5-sdk-3.0.21
+collecting ... collected 2 items
+
+test_netmiko_conftest.py::test_prompt PASSED
+test_netmiko_conftest.py::test_show_version PASSED
+
+=========================== 2 passed in 6.35 seconds ===========================
+============================= test session starts ==============================
+platform linux -- Python 3.6.8, pytest-5.0.1, py-1.8.0, pluggy-0.12.0 -- /home/jlazaro/VENV/py3_venv/bin/python36
+cachedir: .pytest_cache
+rootdir: /home/jlazaro/python_july19/bonus/cicd/test_ex5
+plugins: pylama-7.7.1, f5-sdk-3.0.21
+collecting ... collected 2 items
+
+test_netmiko_conftest.py::test_prompt PASSED
+test_netmiko_conftest.py::test_show_version PASSED
+
+=========================== 2 passed in 6.45 seconds ===========================
